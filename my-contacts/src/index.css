@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Убираем отступы у html и body */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+/* 3. Убираем отступы у всех блочных элементов */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul, figure,
+hr, fieldset, legend,
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+/* 4. Списки — без маркеров и отступов */
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 5. Картинки — блочные, без зазоров снизу */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: top; /* запасной вариант от лишнего пространства */
+}
+
+/* 6. Кнопки и инпуты — сбрасываем стили */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-align: inherit;
+  outline: none;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/* 7. Кнопки — убираем стандартные стили браузера */
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/* 8. Ссылки — без подчёркивания, наследуют цвет */
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+/* 9. Текст — наследование и сброс лишнего */
+html {
+  font-size: 16px; /* база для rem */
+  line-height: 1.5;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  background: #fff;
+}
+
+/* 10. Заголовки — одинаковый вес и размер по умолчанию */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* 11. Поле ввода — убираем стандартные обводки */
+input,
+textarea {
+  border: 1px solid #ccc; /* оставляем минимальную границу, чтобы было видно */
+  background: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0;
+}
+
+/* 12. Таблицы — без отступов и двойных границ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+th, td {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* 13. Цитаты и кавычки — сброс */
+blockquote, q {
+  quotes: none;
+  margin: 0;
+  padding: 0;
+}
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
+}
+
+/* 14. Дополнительно: убираем рамку у fieldset */
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* 15. Если используете iframe — убираем рамку */
+iframe {
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
