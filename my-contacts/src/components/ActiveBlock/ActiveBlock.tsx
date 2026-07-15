@@ -1,4 +1,4 @@
-import './ActiveBlock.css'
+import style from './ActiveBlock.module.css'
 import {useState} from "react";
 
 interface BlockProps {
@@ -13,14 +13,14 @@ function Block({tag, app, url}: BlockProps) {
   return (
     <>
       <a href={url} target="_blank">
-            <section className="block_contacts">
+            <section className={style.block_contacts}>
               <p 
                 onMouseEnter={() => setIsHovered(true)} 
                 onMouseLeave={() => setIsHovered(false)}
-                className="contact_text"
+                className={style.contact_text}
               >
-                <span className={isHovered ? "text_visible" : "text_hidden"}>{tag}</span>
-                <span className={!isHovered ? "text_visible" : "text_hidden"}>{app}</span>
+                <span className={isHovered ? style.text_visible : style.text_hidden}>{tag}</span>
+                <span className={!isHovered ? style.text_visible : style.text_hidden}>{app}</span>
               </p>
             </section>
         </a>
