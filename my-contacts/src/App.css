@@ -23,6 +23,7 @@
   box-sizing: border-box;
   box-shadow: 0 2px 10px rgba(37, 105, 8, 0.838);
   animation: allBlock 1.5s;
+  z-index: 3;
 }
 
 .main_contacts::before {

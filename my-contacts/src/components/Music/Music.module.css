@@ -1,0 +1,46 @@
+.background_block {
+    position: sticky;
+    bottom: 0px;
+    margin-left: auto;
+    width: min(30%, 25rem);
+    max-width: 90vw;
+    height: auto;
+    border-radius: 2%;
+    background: linear-gradient(to right, rgb(251, 238, 221), rgb(247, 235, 218));
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    box-shadow: -20px 0px 20px rgba(11, 185, 190, 0.838);
+    animation: musicOpacity 1.5s;
+    z-index: 1;
+}
+
+.text_block {
+    display: flex;
+    justify-content: space-around;
+    font-size: clamp(1.5rem, 5vw, 1.5rem);
+    color: rgb(46, 9, 9);
+}
+
+.text_block span {
+    font-style: italic;
+}
+
+@keyframes musicOpacity {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 549px) {
+    .background_block {
+        position: relative;
+
+    }
+
+    .text_block span {
+        display: none;
+    }
+}

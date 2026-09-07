@@ -1,6 +1,7 @@
 import './App.css'
 import ActiveBlock from "./components/ActiveBlock/ActiveBlock.tsx";
 import Block from './components/Block/Block.tsx';
+import Music from './components/Music/Music.tsx';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Block title='Language' text='Eng / Ru'/>
           <Block title='Birthday' text='12 August'/>
         </section>
+        <Music />
       </section>
     </>
   )
