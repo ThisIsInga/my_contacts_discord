@@ -12,8 +12,8 @@ function Block({title, text}: BlockProps) {
       <a target="_blank">
             <section className={style.block_contacts}>
               <p className={style.contact_text}>
-                <p>{title}</p>
-                <p>{text}</p>
+                {title}
+                {text}
               </p>
             </section>
         </a>
